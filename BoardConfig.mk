@@ -55,3 +55,4 @@ TW_DEFAULT_EXTERNAL_STORAGE := true
 #TW_INCLUDE_NTFS_3G := true
 TW_NO_USB_STORAGE := true
 TW_THEME := portrait_hdpi
+TW_USE_TOOLBOX := true
