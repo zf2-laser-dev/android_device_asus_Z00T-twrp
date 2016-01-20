@@ -36,7 +36,6 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 -
 
 # Recovery
 RECOVERY_VARIANT=twrp
-TARGET_RECOVERY_FSTAB := device/asus/Z00T/recovery/root/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
