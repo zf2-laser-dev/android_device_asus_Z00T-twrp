@@ -64,3 +64,4 @@ TW_THEME := portrait_hdpi
 TW_NEW_ION_HEAP := true
 TW_NO_USB_STORAGE := true
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_TARGET_USES_QCOM_BSP := true
