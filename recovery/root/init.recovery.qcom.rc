@@ -1,4 +1,0 @@
-on init
-    mkdir /firmware
-    wait /dev/block/platform/msm_sdcc.1/by-name/modem
-    mount ext4 /dev/block/platform/msm_sdcc.1/by-name/modem /firmware
