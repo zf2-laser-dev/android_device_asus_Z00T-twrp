@@ -28,7 +28,6 @@ TARGET_2ND_CPU_VARIANT := generic
 
 # Kernel Prebuilt
 TARGET_PREBUILT_KERNEL := device/asus/Z00T/kernel
-TARGET_CUSTOM_KERNEL_HEADERS := device/asus/Z00T/include
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/Z00T/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.selinux=permissive msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1
 BOARD_KERNEL_PAGESIZE := 2048
@@ -48,13 +47,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # TWRP
 BOARD_SUPPRESS_SECURE_ERASE := true
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_INCLUDE_CRYPTO := true
 TW_THEME := portrait_hdpi
-TW_NO_BATT_PERCENT := true
-TW_NO_USB_STORAGE := true
-TW_SCREEN_BLANK_ON_BOOT := true
