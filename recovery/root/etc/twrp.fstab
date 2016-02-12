@@ -1,15 +1,15 @@
 # TWRP defaults Crypto_Key_Location="footer", so no need to add flags=encryptable=footer to /data
 
 # device                                 mount_point     fstype  mount_flags                             fs_flags    twrp_flags
-/dev/block/bootdevice/by-name/boot       /boot           emmc    defaults                                defaults
-/dev/block/bootdevice/by-name/cache      /cache          ext4    noatime,nosuid,nodev                    defaults
-/dev/block/bootdevice/by-name/userdata   /data           ext4    noatime,nosuid,nodev,noauto_da_alloc    defaults    twrp=length=-16384
-/dev/block/bootdevice/by-name/recovery   /recovery       emmc    defaults                                defaults
 /dev/block/bootdevice/by-name/system     /system         ext4    defaults                                defaults
+/dev/block/bootdevice/by-name/userdata   /data           ext4    noatime,nosuid,nodev,noauto_da_alloc    defaults    twrp=length=-16384
+/dev/block/bootdevice/by-name/cache      /cache          ext4    noatime,nosuid,nodev                    defaults
+/dev/block/bootdevice/by-name/recovery   /recovery       emmc    defaults                                defaults
+/dev/block/bootdevice/by-name/boot       /boot           emmc    defaults                                defaults
 
-/dev/block/bootdevice/by-name/modem      /firmware       vfat    ro                                      defaults    twrp=display="Firmware";backup=1;mounttodecrypt
 /dev/block/bootdevice/by-name/factory    /factory        ext4    defaults                                defaults    twrp=display="Factory";backup=1
+/dev/block/bootdevice/by-name/modem      /firmware       vfat    ro                                      defaults    twrp=display="Firmware";mounttodecrypt
 /dev/block/bootdevice/by-name/persist    /persist        ext4    defaults                                defaults    twrp=display="Persist";backup=1
 
-/dev/block/mmcblk1p1                     /external_sd    vfat    defaults                                defaults    twrp=display="MicroSD";storage;wipeingui;removable
-/dev/block/sda1                          /usb-otg        vfat    defaults                                defaults    twrp=display="USB OTG";storage;wipeingui;removable
+/dev/block/mmcblk1p1                     /external_sd    auto    defaults                                defaults    twrp=display="MicroSD";storage;wipeingui;removable
+/dev/block/sda1                          /usb-otg        auto    defaults                                defaults    twrp=display="USB OTG";storage;wipeingui;removable

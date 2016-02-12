@@ -1,3 +1,28 @@
+#
+# Copyright 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# This contains the module build definitions for the hardware-specific
+# components for this device.
+#
+# As much as possible, those components should be built unconditionally,
+# with device-specific names to avoid collisions, to avoid device-specific
+# bitrot and build breakages. Building a component unconditionally does
+# *not* include it on all devices, so it is safe even with hardware-specific
+# components.
+
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916
@@ -29,7 +54,7 @@ TARGET_2ND_CPU_VARIANT := generic
 # Kernel Prebuilt
 TARGET_PREBUILT_KERNEL := device/asus/Z00T/kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/Z00T/mkbootimg.mk
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.selinux=permissive msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x00000100 --dt device/asus/Z00T/dt.img
 
