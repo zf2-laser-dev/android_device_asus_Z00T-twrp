@@ -22,12 +22,3 @@ on init
 
 service vm_bms /sbin/vm_bms
     disabled
-
-on property:ro.twrp.boot=1
-    mkdir /vendor/firmware
-    mkdir /vendor/firmware/keymaster
-    symlink /firmware/image/keymaste.b00 /vendor/firmware/keymaster/keymaste.b00
-    symlink /firmware/image/keymaste.b01 /vendor/firmware/keymaster/keymaste.b01
-    symlink /firmware/image/keymaste.b02 /vendor/firmware/keymaster/keymaste.b02
-    symlink /firmware/image/keymaste.b03 /vendor/firmware/keymaster/keymaste.b03
-    symlink /firmware/image/keymaste.mdt /vendor/firmware/keymaster/keymaste.mdt
