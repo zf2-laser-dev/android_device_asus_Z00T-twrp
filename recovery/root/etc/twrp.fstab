@@ -6,6 +6,7 @@
 /dev/block/bootdevice/by-name/cache      /cache          ext4    noatime,nosuid,nodev                    defaults
 /dev/block/bootdevice/by-name/recovery   /recovery       emmc    defaults                                defaults
 /dev/block/bootdevice/by-name/boot       /boot           emmc    defaults                                defaults
+/dev/block/bootdevice/by-name/recovery   /recovery       emmc    defaults                                defaults    twrp=backup=1
 
 /dev/block/bootdevice/by-name/factory    /factory        ext4    defaults                                defaults    twrp=display="Factory";backup=1
 /dev/block/bootdevice/by-name/modem      /firmware       vfat    ro                                      defaults    twrp=display="Firmware";mounttodecrypt
