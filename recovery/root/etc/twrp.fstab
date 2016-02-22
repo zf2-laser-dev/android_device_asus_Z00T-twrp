@@ -12,5 +12,5 @@
 /dev/block/bootdevice/by-name/modem      /firmware       vfat    ro                                      defaults    twrp=display="Firmware";mounttodecrypt
 /dev/block/bootdevice/by-name/persist    /persist        ext4    defaults                                defaults    twrp=display="Persist";backup=1
 
-/dev/block/mmcblk1p1                     /external_sd    auto    defaults                                defaults    twrp=display="MicroSD";storage;wipeingui;removable
+/dev/block/mmcblk1p1                     /sdcard1        auto    defaults                                defaults    twrp=display="MicroSD";storage;wipeingui;removable
 /dev/block/sda1                          /usb-otg        auto    defaults                                defaults    twrp=display="USB OTG";storage;wipeingui;removable
